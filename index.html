@@ -31,12 +31,12 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="#" class="flex items-center p-3 text-gray-700 rounded-lg hover:bg-gray-100">
-                                <span>Dashboard</span>
+                                <span>Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="flex items-center p-3 text-gray-700 rounded-lg hover:bg-gray-100">
-                                <span>Analytics</span>
+                                <span>Courses</span>
                             </a>
                         </li>
                         <li>
@@ -89,18 +89,113 @@
         
                 <!-- main area -->
                 <main class="p-6">
-                    <div className='flex-1 relative min-h-screen'>
-                        <div className='w-full'>
-                        <div className='flex flex-col py-6 gap-2 h-full'>
-                            <div class="bg-white rounded-lg shadow p-6">
-                                <h1 class="text-2xl font-bold text-gray-900 mb-2">Welcome to Dashboard</h1>
-                                <p class="text-gray-600">Here's what's happening with your account today.</p>
+                    <div class="flex-1 relative min-h-screen">
+                        <div class="w-full">
+                            <div class="flex flex-col gap-6">
+                                <!-- Welcome Section -->
+                                <div class="bg-white rounded-lg shadow p-6">
+                                    <h1 class="text-2xl font-bold text-gray-900 mb-2">Welcome to Dashboard</h1>
+                                    <p class="text-gray-600">Ipsum lorem</p>
+                                </div>
+    
+                                <!-- Stats Cards -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                    <div class="bg-white p-6 rounded-lg shadow">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-sm font-medium text-gray-600">Total Users</p>
+                                                <p class="text-2xl font-bold text-gray-900">1,234</p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-white p-6 rounded-lg shadow">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-sm font-medium text-gray-600">Hours Total</p>
+                                                <p class="text-2xl font-bold text-gray-900">12,345 hours</p>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-white p-6 rounded-lg shadow">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-sm font-medium text-gray-600">Courses</p>
+                                                <p class="text-2xl font-bold text-gray-900">567</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-white p-6 rounded-lg shadow">
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                <p class="text-sm font-medium text-gray-600">Growth</p>
+                                                <p class="text-2xl font-bold text-gray-900">+12%</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Content Area -->
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                    <div class="bg-white rounded-lg shadow p-6">
+                                        <h3 class="text-lg font-semibold mb-4">Recent Activity</h3>
+                                        <div class="space-y-4">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                                    <span class="text-blue-600 text-sm">●</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-medium">New user registered</p>
+                                                    <p class="text-xs text-gray-500">2 minutes ago</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                                    <span class="text-green-600 text-sm">✓</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-medium">Order completed</p>
+                                                    <p class="text-xs text-gray-500">5 minutes ago</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center">
+                                                    <span class="text-yellow-600 text-sm">!</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-medium">System alert</p>
+                                                    <p class="text-xs text-gray-500">1 hour ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-white rounded-lg shadow p-6">
+                                        <h3 class="text-lg font-semibold mb-4">Quick Actions</h3>
+                                        <div class="flex flex-col gap-3">
+                                            <button class="p-3 text-left flex gap-2 items-center border border-gray-200 rounded-lg lg:w-1/2 hover:bg-gray-50 transition-colors">
+                                                <div class="text-lg mb-1">👥</div>
+                                                <p class="font-medium text-sm">Add User</p>
+                                            </button>
+                                          
+                                            <button class="p-3 text-left border flex gap-2 items-center border-gray-200 rounded-lg lg:w-1/2 hover:bg-gray-50 transition-colors">
+                                                <div class="text-lg mb-1">⚙️</div>
+                                                <p class="font-medium text-sm">Settings</p>
+                                            </button>
+                                            <button class="p-3 text-left border flex gap-2 items-center border-gray-200 rounded-lg lg:w-1/2 hover:bg-gray-50 transition-colors">
+                                                <div class="text-lg mb-1">💬</div>
+                                                <p class="font-medium text-sm">Support</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-
-
-                        
                         </div>
                     </div>
                 </main>
